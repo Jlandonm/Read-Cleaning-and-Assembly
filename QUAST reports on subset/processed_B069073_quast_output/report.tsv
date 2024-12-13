@@ -1,0 +1,29 @@
+Assembly	spades_processed_B069073_contigs	skesa_processed_B069073_contigs	megahit_processed_B069073_contigs
+# contigs (>= 0 bp)	221	196	651
+# contigs (>= 1000 bp)	86	175	135
+# contigs (>= 5000 bp)	73	132	101
+# contigs (>= 10000 bp)	62	106	77
+# contigs (>= 25000 bp)	46	55	53
+# contigs (>= 50000 bp)	32	26	30
+Total length (>= 0 bp)	4230462	4190234	4330295
+Total length (>= 1000 bp)	4205239	4180512	4250786
+Total length (>= 5000 bp)	4173144	4058703	4163879
+Total length (>= 10000 bp)	4099801	3882608	3995888
+Total length (>= 25000 bp)	3819919	3011493	3569615
+Total length (>= 50000 bp)	3316650	1975153	2709922
+# contigs	93	183	155
+Largest contig	185144	137624	155563
+Total length	4210199	4186111	4265319
+GC (%)	28.35	28.37	28.36
+N50	93692	46237	67776
+N75	57993	22856	38069
+L50	16	29	21
+L75	30	61	41
+# total reads	1428783	1429080	1429432
+# left	713915	713915	713915
+# right	713915	713915	713915
+Mapped (%)	99.33	98.36	99.2
+Properly paired (%)	97.97	96.93	97.64
+Avg. coverage depth	33	32	32
+Coverage >= 1x (%)	100.0	100.0	100.0
+# N's per 100 kbp	0.00	0.00	0.00

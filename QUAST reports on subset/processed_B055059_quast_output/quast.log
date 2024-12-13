@@ -1,0 +1,220 @@
+/home/jmenuey3/miniconda3/envs/quast/bin/quast.py spades_processed_B055059/contigs.fa skesa_processed_B055059/contigs.fa megahit_processed_B055059/contigs.fa -1 processed_B055059_R1.fastq.gz -2 processed_B055059_R2.fastq.gz -o processed_B055059_quast_output
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1160.95.1.el7.x86_64-x86_64-with-redhat-7.9-Maipo (linux_64)
+  Python version: 3.6.15
+  CPUs number: 28
+
+Started: 2024-02-17 18:06:11
+
+Logging to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast.log
+NOTICE: Maximum number of threads is set to 7 (use --threads option to set it manually)
+
+CWD: /home/jmenuey3/Group1Assembly
+Main parameters: 
+  MODE: default, threads: 7, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  1  spades_processed_B055059/contigs.fa ==> spades_processed_B055059_contigs
+  2  skesa_processed_B055059/contigs.fa ==> skesa_processed_B055059_contigs
+  3  megahit_processed_B055059/contigs.fa ==> megahit_processed_B055059_contigs
+
+2024-02-17 18:06:11
+Running Reads analyzer...
+
+NOTICE: Improper read names in /home/jmenuey3/Group1Assembly/processed_B055059_R1.fastq.gz (forward reads)! Names should end with /1 (for forward reads) or /2 (for reverse reads) but @B055059.1 was found!
+QUAST will attempt to fix read names.
+
+NOTICE: Improper read names in /home/jmenuey3/Group1Assembly/processed_B055059_R2.fastq.gz (reverse reads)! Names should end with /1 (for forward reads) or /2 (for reverse reads) but @B055059.1 was found!
+QUAST will attempt to fix read names.
+  Logging to files /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.log and /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err...
+  1  Pre-processing reads...
+  1  Running BWA...
+  2  Pre-processing reads...
+  2  Running BWA...
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bwa/bwa \
+index -p /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast_corrected_input/spades_processed_B055059_contigs.fa \
+/home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast_corrected_input/spades_processed_B055059_contigs.fa \
+>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err \
+2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bwa/bwa \
+index -p /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast_corrected_input/skesa_processed_B055059_contigs.fa \
+/home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast_corrected_input/skesa_processed_B055059_contigs.fa \
+>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err \
+2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+  3  Pre-processing reads...
+  3  Running BWA...
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bwa/bwa \
+index -p /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast_corrected_input/megahit_processed_B055059_contigs.fa \
+/home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast_corrected_input/megahit_processed_B055059_contigs.fa \
+>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err \
+2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bwa/bwa \
+mem -t 1 /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast_corrected_input/skesa_processed_B055059_contigs.fa \
+/home/jmenuey3/Group1Assembly/processed_B055059_R1.fastq.gz /home/jmenuey3/Group1Assembly/processed_B055059_R2.fastq.gz \
+> skesa_processed_B055059_contigs.pe1.sam 2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bwa/bwa \
+mem -t 1 /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast_corrected_input/spades_processed_B055059_contigs.fa \
+/home/jmenuey3/Group1Assembly/processed_B055059_R1.fastq.gz /home/jmenuey3/Group1Assembly/processed_B055059_R2.fastq.gz \
+> spades_processed_B055059_contigs.pe1.sam 2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bwa/bwa \
+mem -t 1 /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast_corrected_input/megahit_processed_B055059_contigs.fa \
+/home/jmenuey3/Group1Assembly/processed_B055059_R1.fastq.gz /home/jmenuey3/Group1Assembly/processed_B055059_R2.fastq.gz \
+> megahit_processed_B055059_contigs.pe1.sam 2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+view -t 1 -h -S -f bam skesa_processed_B055059_contigs.pe1.sam > skesa_processed_B055059_contigs.pe1.bam \
+2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+view -t 1 -h -S -f bam megahit_processed_B055059_contigs.pe1.sam > megahit_processed_B055059_contigs.pe1.bam \
+2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+view -t 1 -h -S -f bam spades_processed_B055059_contigs.pe1.sam > spades_processed_B055059_contigs.pe1.bam \
+2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+markdup -r -t 1 --tmpdir /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats \
+skesa_processed_B055059_contigs.pe1.bam skesa_processed_B055059_contigs.pe1.dedup.bam \
+2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+markdup -r -t 1 --tmpdir /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats \
+megahit_processed_B055059_contigs.pe1.bam megahit_processed_B055059_contigs.pe1.dedup.bam \
+2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+markdup -r -t 1 --tmpdir /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats \
+spades_processed_B055059_contigs.pe1.bam spades_processed_B055059_contigs.pe1.dedup.bam \
+2>> /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_stats.err
+  2  Done.
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+view -H -S processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.sam \
+> processed_B055059_quast_output/reads_stats/skesa_processed_B055059_contigs.sam.header \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+  2  Sorting SAM-file...
+  3  Done.
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+view -H -S processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.sam \
+> processed_B055059_quast_output/reads_stats/megahit_processed_B055059_contigs.sam.header \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+  3  Sorting SAM-file...
+  1  Done.
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+view -H -S processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.sam \
+> processed_B055059_quast_output/reads_stats/spades_processed_B055059_contigs.sam.header \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+  1  Sorting SAM-file...
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+view -t 1 -h -S -f bam processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.all.correct.sam \
+> processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.bam \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+view -t 1 -h -S -f bam processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.all.correct.sam \
+> processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.bam \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+view -t 1 -h -S -f bam processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.all.correct.sam \
+> processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.bam \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+flagstat -t 1 processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.bam \
+> processed_B055059_quast_output/reads_stats/skesa_processed_B055059_contigs.stat \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+flagstat -t 1 processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.bam \
+> processed_B055059_quast_output/reads_stats/megahit_processed_B055059_contigs.stat \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/sambamba/sambamba_linux \
+flagstat -t 1 processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.bam \
+> processed_B055059_quast_output/reads_stats/spades_processed_B055059_contigs.stat \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bedtools/bin/bamToBed \
+-i processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.bam \
+> processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.bed \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bedtools/bin/bamToBed \
+-i processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.bam \
+> processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.bed \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bedtools/bin/bamToBed \
+-i processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.bam \
+> processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.bed \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.bed \
+> processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.sorted.bed \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.bed \
+> processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.sorted.bed \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.bed \
+> processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.sorted.bed \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bedtools/bin/bedtools \
+genomecov -i processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.sorted.bed \
+-g processed_B055059_quast_output/quast_corrected_input/skesa_processed_B055059_contigs.fa.fai \
+> processed_B055059_quast_output/reads_stats/temp_output/skesa_processed_B055059_contigs.genomecov \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bedtools/bin/bedtools \
+genomecov -i processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.sorted.bed \
+-g processed_B055059_quast_output/quast_corrected_input/spades_processed_B055059_contigs.fa.fai \
+> processed_B055059_quast_output/reads_stats/temp_output/spades_processed_B055059_contigs.genomecov \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+/home/jmenuey3/miniconda3/envs/quast/lib/python3.6/site-packages/quast_libs/bedtools/bin/bedtools \
+genomecov -i processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.sorted.bed \
+-g processed_B055059_quast_output/quast_corrected_input/megahit_processed_B055059_contigs.fa.fai \
+> processed_B055059_quast_output/reads_stats/temp_output/megahit_processed_B055059_contigs.genomecov \
+2>> processed_B055059_quast_output/reads_stats/reads_stats.err
+  2  Analysis is finished.
+  1  Analysis is finished.
+  3  Analysis is finished.
+  Creating total report...
+    saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/reads_stats/reads_report.txt, reads_report.tsv, and reads_report.tex
+Done.
+
+2024-02-17 18:10:07
+Running Basic statistics processor...
+  Contig files: 
+    1  spades_processed_B055059_contigs
+    2  skesa_processed_B055059_contigs
+    3  megahit_processed_B055059_contigs
+  Calculating N50 and L50...
+    1  spades_processed_B055059_contigs, N50 = 78324, L50 = 20, Total length = 4433132, GC % = 28.40, # N's per 100 kbp =  0.00
+    2  skesa_processed_B055059_contigs, N50 = 41147, L50 = 37, Total length = 4402042, GC % = 28.45, # N's per 100 kbp =  0.00
+    3  megahit_processed_B055059_contigs, N50 = 53831, L50 = 28, Total length = 4487002, GC % = 28.37, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/basic_stats/GC_content_plot.pdf
+  Drawing spades_processed_B055059_contigs GC content plot...
+    saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/basic_stats/spades_processed_B055059_contigs_GC_content_plot.pdf
+  Drawing skesa_processed_B055059_contigs GC content plot...
+    saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/basic_stats/skesa_processed_B055059_contigs_GC_content_plot.pdf
+  Drawing megahit_processed_B055059_contigs GC content plot...
+    saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/basic_stats/megahit_processed_B055059_contigs_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-02-17 18:10:09
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2024-02-17 18:10:10
+RESULTS:
+  Text versions of total report are saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/report.html
+  PDF version (tables and plots) is saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/report.pdf
+  Icarus (contig browser) is saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/icarus.html
+  Log is saved to /home/jmenuey3/Group1Assembly/processed_B055059_quast_output/quast.log
+
+Finished: 2024-02-17 18:10:10
+Elapsed time: 0:03:59.815311
+NOTICEs: 4; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

@@ -1,0 +1,18 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly             spades_processed_B055059_contigs  skesa_processed_B055059_contigs  megahit_processed_B055059_contigs
+# total reads        1676109                           1677618                          1677810                          
+# left               837628                            837628                           837628                           
+# right              837628                            837628                           837628                           
+# mapped             1673688                           1665851                          1676107                          
+Mapped (%)           99.86                             99.3                             99.9                             
+# properly paired    1652344                           1638546                          1642086                          
+Properly paired (%)  98.58                             97.67                            97.87                            
+# singletons         1153                              6083                             555                              
+Singletons (%)       0.07                              0.36                             0.03                             
+# misjoint mates     17792                             17326                            29418                            
+Misjoint mates (%)   1.06                              1.03                             1.75                             
+Avg. coverage depth  55                                55                               54                               
+Coverage >= 1x (%)   100.0                             100.0                            100.0                            
+Coverage >= 5x (%)   99.32                             99.72                            99.33                            
+Coverage >= 10x (%)  97.74                             98.21                            97.7                             

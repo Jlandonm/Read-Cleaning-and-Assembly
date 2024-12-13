@@ -1,0 +1,16 @@
+Assembly	spades_processed_B069073_contigs	skesa_processed_B069073_contigs	megahit_processed_B069073_contigs
+# total reads	1428783	1429080	1429432
+# left	713915	713915	713915
+# right	713915	713915	713915
+# mapped	1419152	1405594	1418004
+Mapped (%)	99.33	98.36	99.2
+# properly paired	1399746	1385234	1395628
+Properly paired (%)	97.97	96.93	97.64
+# singletons	1113	2134	1350
+Singletons (%)	0.08	0.15	0.09
+# misjoint mates	2732	2636	4904
+Misjoint mates (%)	0.19	0.18	0.34
+Avg. coverage depth	33	32	32
+Coverage >= 1x (%)	100.0	100.0	100.0
+Coverage >= 5x (%)	99.8	99.92	99.78
+Coverage >= 10x (%)	98.79	98.97	98.47

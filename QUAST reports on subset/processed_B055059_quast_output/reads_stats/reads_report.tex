@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper]{article}
+\begin{document}
+\begin{table}[ht]
+\begin{center}
+\caption{All statistics are based on contigs of size $\geq$ 500 bp, unless otherwise noted (e.g., "\# contigs ($\geq$ 0 bp)" and "Total length ($\geq$ 0 bp)" include all contigs).}
+\begin{tabular}{|l*{3}{|r}|}
+\hline
+Assembly & spades\_processed\_B055059\_contigs & skesa\_processed\_B055059\_contigs & megahit\_processed\_B055059\_contigs \\ \hline
+\# total reads & 1676109 & 1677618 & 1677810 \\ \hline
+\# left & 837628 & 837628 & 837628 \\ \hline
+\# right & 837628 & 837628 & 837628 \\ \hline
+\# mapped & 1673688 & 1665851 & {\bf 1676107} \\ \hline
+Mapped (\%) & 99.86 & 99.3 & {\bf 99.9} \\ \hline
+\# properly paired & {\bf 1652344} & 1638546 & 1642086 \\ \hline
+Properly paired (\%) & {\bf 98.58} & 97.67 & 97.87 \\ \hline
+\# singletons & 1153 & 6083 & {\bf 555} \\ \hline
+Singletons (\%) & 0.07 & 0.36 & {\bf 0.03} \\ \hline
+\# misjoint mates & 17792 & {\bf 17326} & 29418 \\ \hline
+Misjoint mates (\%) & 1.06 & {\bf 1.03} & 1.75 \\ \hline
+Avg. coverage depth & {\bf 55} & {\bf 55} & 54 \\ \hline
+Coverage $\geq$ 1x (\%) & 100.0 & 100.0 & 100.0 \\ \hline
+Coverage $\geq$ 5x (\%) & 99.32 & {\bf 99.72} & 99.33 \\ \hline
+Coverage $\geq$ 10x (\%) & 97.74 & {\bf 98.21} & 97.7 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}
