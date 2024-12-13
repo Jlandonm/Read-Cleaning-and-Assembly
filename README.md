@@ -6,4 +6,4 @@
 read_qc_and_assembly.sh <fastq dir> <output dir>
 ```
 
-## Raw Files not included in repo
+Raw Files not included in repo
