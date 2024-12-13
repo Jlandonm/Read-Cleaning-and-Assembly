@@ -1,0 +1,90 @@
+File: processed_B017151Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B017160Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B053323Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B053623Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B054110Flagstat.txt
+2868 + 0 properly paired (0.12% : N/A)
+------------------------
+File: processed_B054302Flagstat.txt
+5222 + 0 properly paired (0.18% : N/A)
+------------------------
+File: processed_B054392Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B054821Flagstat.txt
+6146 + 0 properly paired (0.16% : N/A)
+------------------------
+File: processed_B054954Flagstat.txt
+16 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B055059Flagstat.txt
+4 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B055142Flagstat.txt
+1202 + 0 properly paired (0.06% : N/A)
+------------------------
+File: processed_B055147Flagstat.txt
+3138 + 0 properly paired (0.07% : N/A)
+------------------------
+File: processed_B056268Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B059291Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B059468Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B059547Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B059673Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B060383Flagstat.txt
+1064 + 0 properly paired (0.03% : N/A)
+------------------------
+File: processed_B062556Flagstat.txt
+884 + 0 properly paired (0.03% : N/A)
+------------------------
+File: processed_B065746Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B065770Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B066302Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B069073Flagstat.txt
+4112 + 0 properly paired (0.29% : N/A)
+------------------------
+File: processed_B069083Flagstat.txt
+2388 + 0 properly paired (0.06% : N/A)
+------------------------
+File: processed_B069085Flagstat.txt
+1172 + 0 properly paired (0.03% : N/A)
+------------------------
+File: processed_B277662Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B376070Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B376297Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B468166Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
+File: processed_B916249Flagstat.txt
+0 + 0 properly paired (0.00% : N/A)
+------------------------
