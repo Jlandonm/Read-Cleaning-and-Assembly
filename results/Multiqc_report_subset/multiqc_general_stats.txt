@@ -1,0 +1,19 @@
+Sample	QUAST_mqc-generalstats-quast-N50	QUAST_mqc-generalstats-quast-Total_length	Samtools_mqc-generalstats-samtools-flagstat_total	Samtools_mqc-generalstats-samtools-mapped_passed	Samtools_mqc-generalstats-samtools-mapped_passed_pct
+megahit_processed_B053323_contigs	101377.0	4446143.0			
+megahit_processed_B053323_contigs.stat			1116577	1114479	99.81
+megahit_processed_B055059_contigs	53831.0	4487002.0			
+megahit_processed_B055059_contigs.stat			1677810	1676107	99.9
+megahit_processed_B069073_contigs	67776.0	4265319.0			
+megahit_processed_B069073_contigs.stat			1429432	1418004	99.2
+skesa_processed_B053323_contigs	61457.0	4439793.0			
+skesa_processed_B053323_contigs.stat			1116480	1109695	99.39
+skesa_processed_B055059_contigs	41147.0	4402042.0			
+skesa_processed_B055059_contigs.stat			1677618	1665851	99.3
+skesa_processed_B069073_contigs	46237.0	4186111.0			
+skesa_processed_B069073_contigs.stat			1429080	1405594	98.36
+spades_processed_B053323_contigs	155807.0	4458454.0			
+spades_processed_B053323_contigs.stat			1115305	1114315	99.91
+spades_processed_B055059_contigs	78324.0	4433132.0			
+spades_processed_B055059_contigs.stat			1676109	1673688	99.86
+spades_processed_B069073_contigs	93692.0	4210199.0			
+spades_processed_B069073_contigs.stat			1428783	1419152	99.33

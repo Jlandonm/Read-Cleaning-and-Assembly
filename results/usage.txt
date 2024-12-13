@@ -1,0 +1,10 @@
+Script Called	File Header	Assembler	Execution Time(s)	CPU Usage	Memory Usage
+AssemblyCommands.sh	B053323	spades	101.898831818	48.00%	98.00%
+AssemblyCommands.sh	B055059	spades	136.516606959	49.00%	98.00%
+AssemblyCommands.sh	B069073	spades	161.289338021	50.00%	98.00%
+AssemblyCommands.sh	B053323	skesa	171.031584669	46.00%	98.00%
+AssemblyCommands.sh	B055059	skesa	237.341063113	50.00%	98.00%
+AssemblyCommands.sh	B069073	skesa	345.696928103	48.00%	98.00%
+AssemblyCommands.sh	B053323	megahit	85.033804228	49.00%	98.00%
+AssemblyCommands.sh	B055059	megahit	104.175045237	50.00%	98.00%
+AssemblyCommands.sh	B069073	megahit	123.091700147	48.00%	97.00%
